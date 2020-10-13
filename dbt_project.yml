@@ -8,6 +8,10 @@ test-paths: ["tests"]
 data-paths: ["data"]
 macro-paths: ["macros"]
 
+seeds:
+  +enabled: true
+  +schema: "raw"
+
 target-path: "target"
 clean-targets:
     - "target"
@@ -21,5 +25,4 @@ models:
         materialized: view
         tags: ["staging", "hourly"]
 
-seeds:
-  +schema: 'raw'
+
